@@ -175,31 +175,7 @@ cards.forEach((card) => {
 // AUTO SCROLL TO TODAY
 // =========================================
 
-window.addEventListener("load", () => {
 
-    const today =
-        new Date().getDate();
-
-    const allTitles =
-        document.querySelectorAll(".day-title");
-
-    allTitles.forEach((title) => {
-
-        if (title.textContent.includes(today)) {
-
-            title.scrollIntoView({
-
-                behavior: "smooth",
-
-                block: "center"
-
-            });
-
-        }
-
-    });
-
-});
 
 // =========================================
 // CONFETTI EFFECT ON FINAL DAY
